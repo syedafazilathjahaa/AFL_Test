@@ -66,3 +66,4 @@ WORKDIR AFL
 COPY . $SRC/
 COPY .clusterfuzzlite/build.sh $SRC/
 COPY .clusterfuzzlite/imgRead.c .clusterfuzzlite/input/image.img $SRC/
+COPY .clusterfuzzlite/build_afl.bash $SRC/
