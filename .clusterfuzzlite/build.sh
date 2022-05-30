@@ -10,9 +10,9 @@ make all
 ar ru FuzzingEngine.a afl-compiler-rt.o utils/aflpp_driver/aflpp_driver.o
 
 cp -f FuzzingEngine.a afl-fuzz afl-showmap ../
-cp $SRC/.clusterfuzzlite/imageRead.c .
+cp $SRC/.clusterfuzzlite/imgRead.c .
 ls -lrth
 echo "Success: link fuzz target against FuzzingEngine.a!"
 
-$CC -fsanitize=address -fsanitize-coverage=trace-pc-guard imageRead.c FuzzingEngine.a -o imageRead
-cp ./imageRead $OUT/
+$CC -fsanitize=address -fsanitize-coverage=trace-pc-guard imgRead.c FuzzingEngine.a -o imgRead
+cp ./imgRead $OUT/
