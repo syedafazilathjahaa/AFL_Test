@@ -16,4 +16,5 @@ cp $SRC/.clusterfuzzlite/imgRead.c .
 ls -lrth
 
 ./afl-cc -fsanitize=address,undefined -ggdb imgRead.c -o imgRead
+ls -lrth
 cp ./*.o $OUT/
