@@ -17,4 +17,4 @@ ls -lrth
 
 ./afl-cc -fsanitize=address,undefined -ggdb imgRead.c -o imgRead
 ls -lrth
-cp ./*.o $OUT/
+cp ./imgRead $OUT/
