@@ -65,5 +65,4 @@ RUN export LLVM_CONFIG=/usr/bin/llvm-config-10
 WORKDIR AFL
 COPY . $SRC/
 COPY .clusterfuzzlite/build.sh $SRC/
-COPY .clusterfuzzlite/imgRead.c .clusterfuzzlite/input/image.img $SRC/
-COPY .clusterfuzzlite/build_afl.bash $SRC/
+COPY .clusterfuzzlite/imgRead.c  .clusterfuzzlite/input/image.img $SRC/
