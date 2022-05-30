@@ -12,8 +12,8 @@ git clone https://github.com/AFLplusplus/AFLplusplus
 cd AFLplusplus
 make all
 make install
-cp $SRC/.clusterfuzzlite/imgRead_libfuzzer.c .
+cp $SRC/.clusterfuzzlite/imgRead.c .
 ls -lrth
 
-./afl-cc -fsanitize=address,undefined -ggdb imgRead_libfuzzer.c -o imgRead_libfuzzer
+./afl-cc -fsanitize=address,undefined -ggdb imgRead.c -o imgRead
 cp ./*.o $OUT/
