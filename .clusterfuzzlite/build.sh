@@ -1,2 +1,2 @@
 cd $SRC/.clusterfuzzlite
-./build_afl.bash
+chmod +x ./build_afl.bash
