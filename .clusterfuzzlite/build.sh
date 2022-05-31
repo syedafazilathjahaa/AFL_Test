@@ -16,7 +16,7 @@ echo "Success: link fuzz target against FuzzingEngine.a!"
 
 $CC -fsanitize=address -fsanitize-coverage=trace-pc-guard imgRead.c FuzzingEngine.a -o imgRead
 ls -lrth
-cp imgRead.c imgRead $OUT/
+cp imgRead.c imgRead.pkg $OUT/
 ls -lrth
 chmod +x $OUT/imgRead
 cd $OUT
