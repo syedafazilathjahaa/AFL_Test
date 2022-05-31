@@ -19,3 +19,4 @@ ls -lrth
 cp imgRead.c imgRead $OUT/
 ls -lrth
 chmod +x $OUT/imgRead
+pwd
